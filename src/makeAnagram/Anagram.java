@@ -32,23 +32,9 @@ public class Anagram {
 			charsB[b.charAt(i) - 'a']++;
 		}
 	    
-//	    System.out.println(Arrays.stream(chars).sum());
-//		for(int i = 0; i < chars.length; i++) {
-//			//if((chars[i] <= 1 || chars[i] % 2 == 1) && chars[i] > 0) {
-//				//result++;
-//				if(chars[i] % 2 == 1 && chars[i]> 0) {
-//					result++;
-//					if(chars[i] > 2) {
-//						result++;
-//				//	}
-//				}
-//			}
-//		}
 	    for (int i = 0; i < 26; i++)
-            result += Math.abs(charsA[i] -
-                               charsB[i]);
+            result += Math.abs(charsA[i] - charsB[i]);
 		
-		//return Arrays.stream(chars).sum() - result;
 		return result;
     }
 }
